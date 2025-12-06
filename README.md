@@ -25,14 +25,6 @@ The POS system includes the following key functionalities:
 
 ---
 
-## Screenshots
-
-![POS Screenshot 1](assets/images/screenshot1.png)  
-![POS Screenshot 2](assets/images/screenshot2.png)
-
-*(Add screenshots of your application in the `assets/images` folder)*
-
----
 
 ## Technologies Used
 - **HTML5** – Structure and layout of the web pages.

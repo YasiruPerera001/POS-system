@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DailyMart POS</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">DailyMart POS</div>
+    <div class="right-controls">
+      <input id="searchInput" class="search-input" placeholder="Search products..." />
+      <a href="products.html" class="link">Manage Products</a>
+      <a href="orders.html" class="link">Orders</a>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="products-panel">
+      <div class="toolbar">
+        <div id="categories" class="categories"></div>
+      </div>
+      <div id="productGrid" class="grid"></div>
+    </section>
+
+    <aside class="cart-panel">
+      <h2>Cart</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="totals">
+        <div class="line"><span>Subtotal</span><span>$<span id="subtotal">0.00</span></span></div>
+        <div class="line"><span>Tax (<span id="taxRateLabel">8%</span>)</span><span>$<span id="tax">0.00</span></span></div>
+        <div class="line total"><span>Total</span><span>$<span id="total">0.00</span></span></div>
+      </div>
+      <div class="cart-actions">
+        <button id="clearBtn" class="btn secondary">Clear</button>
+        <button id="checkoutBtn" class="btn primary">Checkout</button>
+      </div>
+    </aside>
+  </main>
+
+  <div id="checkoutModal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <h3>Checkout</h3>
+      <div id="checkoutDetails"></div>
+      <div style="margin-top:12px">
+        <button id="confirmCheckout" class="btn primary" style="width:48%;margin-right:4%;">Confirm Payment</button>
+        <button id="cancelCheckout" class="btn secondary" style="width:48%;">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
